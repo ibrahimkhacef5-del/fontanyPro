@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fontany"
+version = "1.0.0"
+authors = [{ name = "ibrahimkhacef5-del" }]
+description = "Convert any font to MT Manager (MTZ) format"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = [
+    "fonttools>=4.0.0",
+    "brotli>=1.0.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/ibrahimkhacef5-del/fontany"
+Repository = "https://github.com/ibrahimkhacef5-del/fontany"
+
+[project.scripts]
+fontany = "fontany.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["fontany*"]
